@@ -1,28 +1,28 @@
 <?php
 $bronzeSword = [
-	'name' = '銅の剣',
-	'price' = 200,
-	'material' = '銅',
-	'attack' = 15,
+	'name' => '銅の剣',
+	'price' => 200,
+	'material' => '銅',
+	'attack' => 15,
 ];
 $silverSword = [
-	'name' = '銀の剣',
-	'price' = 5000,
-	'material' = '銀',
-	'attack' = 40,
+	'name' => '銀の剣',
+	'price' => 5000,
+	'material' => '銀',
+	'attack' => 40,
 ];
 
 $leatherArmor = [
-	'name' = 'レザーアーマー',
-	'price' = 100,
-	'material' = '革',
-	'deffence' = 10,
+	'name' => 'レザーアーマー',
+	'price' => 100,
+	'material' => '革',
+	'deffence' => 10,
 ];
 $goldArmor = [
-	'name' = '金の鎧',
-	'price' = 10000,
-	'material' = '金',
-	'deffence' = 30,
+	'name' => '金の鎧',
+	'price' => 10000,
+	'material' => '金',
+	'deffence' => 30,
 ];
 
 $itemFactory = new ItemFactory();
