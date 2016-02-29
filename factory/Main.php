@@ -31,7 +31,7 @@ $items[] = $itemFactory->create('sword', $silverSword);
 $items[] = $itemFactory->create('armor', $leatherArmor);
 $items[] = $itemFactory->create('armor', $goldArmor);
 
-forearch($items as $item){
+foreach($items as $item){
 	echo $item->getDetail();
 }
 
