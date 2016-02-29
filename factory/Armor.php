@@ -1,4 +1,5 @@
-public class Armor implements Item
+<?php
+class Armor implements Item
 {
 	protected $price;
 	protected $material;

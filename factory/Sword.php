@@ -1,4 +1,5 @@
-public class Sword implements Item
+<?php
+class Sword implements Item
 {
 	protected $price;
 	protected $material;
