@@ -1,15 +1,15 @@
-public class Sword implements Item
+public class Armor implements Item
 {
 	protected $price;
 	protected $material;
-	protected $attack;
+	protected $deffence;
 
 	public function __construct($arr)
 	{
 		$this->name = $arr['name'];
 		$this->price = $arr['price'];
 		$this->material = $arr['material'];
-		$this->attack = $arr['attack'];
+		$this->deffence = $arr['deffence'];
 	}
 
 	public function __toString()
@@ -27,16 +27,17 @@ public class Sword implements Item
 		return $this->material;
 	}
 
-	public function getAttack()
+	public function getDeffence()
 	{
-		return $this->attack;
+		return $this->deffence;
 	}
 
 	public function getDetail()
 	{
-		return "このアイテムは{$this->getMaterial()}でできた"
-			. "{$this->getPrice()}ギルの"
-			. "攻撃力{$this->getAttack()}の剣だ！";
+		return "この鎧は{$this->getMaterial()}でできている"
+			. "{$this->getPrice()}ギルで、防御力は"
+			. "{$this->getDeffence()}だ！";
 	}
 }
+
 
