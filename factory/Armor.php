@@ -1,6 +1,11 @@
 <?php
+namespace factory;
+
+require_once('Item.php');
+
 class Armor implements Item
 {
+	protected $name;
 	protected $price;
 	protected $material;
 	protected $deffence;
@@ -37,7 +42,7 @@ class Armor implements Item
 	{
 		return "この鎧は{$this->getMaterial()}でできている"
 			. "{$this->getPrice()}ギルで、防御力は"
-			. "{$this->getDeffence()}だ！";
+			. "{$this->getDeffence()}だ！\n";
 	}
 }
 

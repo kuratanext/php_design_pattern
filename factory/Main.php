@@ -1,4 +1,8 @@
 <?php
+namespace factory;
+
+require_once('ItemFactory.php');
+
 $bronzeSword = [
 	'name' => '銅の剣',
 	'price' => 200,

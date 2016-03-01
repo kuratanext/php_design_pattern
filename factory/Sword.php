@@ -1,6 +1,11 @@
 <?php
+namespace factory;
+
+require_once('Item.php');
+
 class Sword implements Item
 {
+	protected $name;
 	protected $price;
 	protected $material;
 	protected $attack;
@@ -37,7 +42,7 @@ class Sword implements Item
 	{
 		return "このアイテムは{$this->getMaterial()}でできた"
 			. "{$this->getPrice()}ギルの"
-			. "攻撃力{$this->getAttack()}の剣だ！";
+			. "攻撃力{$this->getAttack()}の剣だ！\n";
 	}
 }
 
