@@ -3,7 +3,6 @@ namespace strategy;
 
 require_once('Gun.php');
 require_once('Sword.php');
-
 require_once('WeaponClient.php');
 
 $client = new WeaponClient();
