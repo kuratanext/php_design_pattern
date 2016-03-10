@@ -1,7 +1,7 @@
 <?php
 namespace singleton;
 
-require_once('Player.php');
+require_once ('Player.php');
 
 $player = Player::getInstance();
 $player->sayHello();

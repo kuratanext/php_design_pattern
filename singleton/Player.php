@@ -1,20 +1,21 @@
 <?php
 namespace singleton;
 
-require_once('Singleton.php');
+require_once ('Singleton.php');
 
 class Player extends Singleton
 {
-	private $name;
 
-	protected function init()
-	{
-		$this->name = 'hikaru';
-	}
+    private $name;
 
-	public function sayHello()
-	{
-		echo "Hello,{$this->name}\n";
-	}
+    protected function init()
+    {
+        $this->name = 'hikaru';
+    }
+
+    public function sayHello()
+    {
+        echo "Hello,{$this->name}\n";
+    }
 }
 

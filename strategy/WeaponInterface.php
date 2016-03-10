@@ -3,6 +3,7 @@ namespace strategy;
 
 interface WeaponInterface
 {
-	public function attack();
+
+    public function attack();
 }
 

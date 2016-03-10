@@ -1,49 +1,51 @@
 <?php
 namespace factory;
 
-require_once('Item.php');
+require_once ('Item.php');
 
 class Armor implements Item
 {
-	protected $name;
-	protected $price;
-	protected $material;
-	protected $deffence;
 
-	public function __construct($arr)
-	{
-		$this->name = $arr['name'];
-		$this->price = $arr['price'];
-		$this->material = $arr['material'];
-		$this->deffence = $arr['deffence'];
-	}
+    protected $name;
 
-	public function __toString()
-	{
-		return $this->name;
-	}
+    protected $price;
 
-	public function getPrice()
-	{
-		return $this->price;
-	}
+    protected $material;
 
-	public function getMaterial()
-	{
-		return $this->material;
-	}
+    protected $deffence;
 
-	public function getDeffence()
-	{
-		return $this->deffence;
-	}
+    public function __construct($arr)
+    {
+        $this->name = $arr['name'];
+        $this->price = $arr['price'];
+        $this->material = $arr['material'];
+        $this->deffence = $arr['deffence'];
+    }
 
-	public function getDetail()
-	{
-		return "この鎧は{$this->getMaterial()}でできている"
-			. "{$this->getPrice()}ギルで、防御力は"
-			. "{$this->getDeffence()}だ！\n";
-	}
+    public function __toString()
+    {
+        return $this->name;
+    }
+
+    public function getPrice()
+    {
+        return $this->price;
+    }
+
+    public function getMaterial()
+    {
+        return $this->material;
+    }
+
+    public function getDeffence()
+    {
+        return $this->deffence;
+    }
+
+    public function getDetail()
+    {
+        return "この鎧は{$this->getMaterial()}でできている" . "{$this->getPrice()}ギルで、防御力は" . "{$this->getDeffence()}だ！\n";
+    }
 }
 
 
